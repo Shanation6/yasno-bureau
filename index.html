@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ясно Бюро — Дизайн и разработка сайтов</title>
+  <meta name="description" content="Независимое веб-бюро. Создаю понятные сайты для малого бизнеса: лендинги, сайты компаний и каталоги. Понятный сайт начинается с понимания бизнеса.">
+  <meta name="author" content="Ясно Бюро">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ясно Бюро — Дизайн и разработка сайтов">
+  <meta property="og:description" content="Создаю сайты, которые понятно рассказывают о вашем бизнесе и помогают клиенту сделать следующий шаг.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="assets/images/project-neftesbor.png">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2244%22 fill=%22%23465C3B%22/><circle cx=%2268%22 cy=%2232%22 r=%2210%22 fill=%22%23E5EBCF%22/></svg>">
+
+  <!-- Typography: Manrope (Latin + Cyrillic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Клавиатурный переход к контенту (A11y) -->
+  <a href="#main-content" class="skip-to-content">Перейти к основному содержанию</a>
+
+  <!-- 1. ШАПКА -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Ясно Бюро — на главную">
+        <span class="brand-text">ясно бюро</span>
+        <span class="brand-dot" aria-hidden="true"></span>
+      </a>
+
+      <!-- Десктопная навигация -->
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="#works" class="nav-link">Работы</a></li>
+          <li><a href="#services" class="nav-link">Услуги</a></li>
+          <li><a href="#approach" class="nav-link">Подход</a></li>
+          <li><a href="#process" class="nav-link">Как работаю</a></li>
+          <li><a href="#about" class="nav-link">Обо мне</a></li>
+          <li><a href="#faq" class="nav-link">Вопросы</a></li>
+          <li><a href="#contact" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">
+          <span>Обсудить задачу</span>
+        </a>
+
+        <!-- Кнопка мобильного меню (Touch target >= 44x44px) -->
+        <button type="button" class="mobile-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть главное меню">
+          <span class="hamburger-line" aria-hidden="true"></span>
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-content">
+        <nav aria-label="Мобильная навигация">
+          <ul class="mobile-nav-list">
+            <li><a href="#works" class="mobile-nav-link">Работы</a></li>
+            <li><a href="#services" class="mobile-nav-link">Услуги</a></li>
+            <li><a href="#approach" class="mobile-nav-link">Подход</a></li>
+            <li><a href="#process" class="mobile-nav-link">Как работаю</a></li>
+            <li><a href="#about" class="mobile-nav-link">Обо мне</a></li>
+            <li><a href="#faq" class="mobile-nav-link">Вопросы</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+          <a href="#contact" class="btn btn-primary btn-block mobile-cta">Обсудить задачу</a>
+          <p class="mobile-menu-note">Дизайн и разработка сайтов</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 2. ПЕРВЫЙ ЭКРАН (HERO) -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <span class="eyebrow-badge" aria-hidden="true">00</span>
+              <span class="eyebrow-text">Независимое веб-бюро</span>
+            </div>
+
+            <h1 id="hero-title" class="hero-title">
+              Ваше дело.<br>
+              Ясно и&nbsp;по&nbsp;существу
+            </h1>
+
+            <p class="hero-description">
+              Создаю сайты, которые понятно рассказывают о&nbsp;вашем бизнесе и&nbsp;помогают клиенту сделать следующий шаг: выбрать товар, записаться или отправить заявку.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary btn-lg">
+                <span>Обсудить мой сайт</span>
+              </a>
+              <a href="#works" class="btn btn-secondary btn-lg">
+                <span>Посмотреть работы</span>
+                <svg class="icon-arrow-down" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-tags-row">
+              <span class="tag-item">Лендинги</span>
+              <span class="tag-separator" aria-hidden="true">·</span>
+              <span class="tag-item">Сайты компаний</span>
+              <span class="tag-separator" aria-hidden="true">·</span>
+              <span class="tag-item">Каталоги</span>
+            </div>
+          </div>
+
+          <!-- Фрагмент реальной работы рядом с первым экраном -->
+          <div class="hero-preview-col">
+            <div class="hero-featured-card">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser-url">neftesbor.ru</div>
+                <span class="browser-status">Реальный проект</span>
+              </div>
+              <a href="#project-01" class="hero-preview-link" aria-label="Перейти к проекту 01: Енисей-Спас">
+                <picture>
+                  <source srcset="assets/images/project-neftesbor.webp" type="image/webp">
+                  <img src="assets/images/project-neftesbor.png" alt="Фрагмент главной страницы каталога нефтесборного оборудования Енисей-Спас" width="1440" height="920" loading="eager" fetchpriority="high">
+                </picture>
+                <div class="hero-preview-overlay">
+                  <div class="hero-preview-meta">
+                    <span class="project-tag">Каталог оборудования · B2B</span>
+                    <strong class="hero-preview-title">Енисей-Спас</strong>
+                  </div>
+                  <div class="hero-preview-arrow" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. РАБОТЫ (3 РЕАЛЬНЫХ ПРОЕКТА) -->
+    <section class="section works-section" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-number">01 / Проекты</div>
+          <h2 id="works-title" class="section-title">Три проекта. Разные задачи</h2>
+          <p class="section-lead">
+            Выбрать оборудование, познакомиться с&nbsp;программой или записаться на&nbsp;занятие&nbsp;— у&nbsp;каждого сайта свой сценарий.
+          </p>
+        </header>
+
+        <div class="projects-list">
+          <!-- ПРОЕКТ 01 -->
+          <article class="project-card project-card-wide" id="project-01">
+            <div class="project-media">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser-url">https://neftesbor.ru/</div>
+                  <span class="browser-badge">B2B Каталог</span>
+                </div>
+                <div class="project-image-wrap">
+                  <picture>
+                    <source srcset="assets/images/project-neftesbor.webp" type="image/webp">
+                    <img src="assets/images/project-neftesbor.png" alt="Интерфейс каталога нефтесборного оборудования Енисей-Спас" width="1440" height="920" loading="lazy">
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-header-meta">
+                <span class="project-index">01</span>
+                <span class="project-category">Каталог оборудования · B2B</span>
+              </div>
+              <h3 class="project-name">Енисей-Спас</h3>
+              <p class="project-desc">
+                Каталог нефтесборного оборудования с&nbsp;категориями, карточками товаров и&nbsp;формированием заявки на&nbsp;поставку.
+              </p>
+
+              <div class="project-features-block">
+                <h4 class="features-label">Особенности:</h4>
+                <ul class="features-list">
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Поиск и&nbsp;категории</span>
+                  </li>
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Карточки оборудования</span>
+                  </li>
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Корзина и&nbsp;запрос расчёта</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://neftesbor.ru/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-btn" aria-label="Открыть сайт Енисей-Спас в новой вкладке">
+                  <span>Открыть сайт</span>
+                  <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ПРОЕКТ 02 -->
+          <article class="project-card project-card-reversed" id="project-02">
+            <div class="project-media">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser-url">shanation6.github.io/talantland-syte/</div>
+                  <span class="browser-badge">Образование</span>
+                </div>
+                <div class="project-image-wrap">
+                  <picture>
+                    <source srcset="assets/images/project-talantland.webp" type="image/webp">
+                    <img src="assets/images/project-talantland.png" alt="Сайт детской студии ТалантЛэнд" width="1440" height="920" loading="lazy">
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-header-meta">
+                <span class="project-index">02</span>
+                <span class="project-category">Образование · Сайт студии</span>
+              </div>
+              <h3 class="project-name">ТалантЛэнд</h3>
+              <p class="project-desc">
+                Программы обучения, видео занятий и&nbsp;знакомство с&nbsp;преподавателем&nbsp;— с&nbsp;переходом к&nbsp;записи на&nbsp;пробный урок.
+              </p>
+
+              <div class="project-features-block">
+                <h4 class="features-label">Особенности:</h4>
+                <ul class="features-list">
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Программы и&nbsp;стоимость</span>
+                  </li>
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Живые видео и&nbsp;фотографии</span>
+                  </li>
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Форма записи</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://shanation6.github.io/talantland-syte/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-btn" aria-label="Открыть сайт ТалантЛэнд в новой вкладке">
+                  <span>Открыть сайт</span>
+                  <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ПРОЕКТ 03 -->
+          <article class="project-card project-card-compact" id="project-03">
+            <div class="project-media">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser-url">https://ikigai-mastermind.ru/</div>
+                  <span class="browser-badge">Сообщество</span>
+                </div>
+                <div class="project-image-wrap">
+                  <picture>
+                    <source srcset="assets/images/project-ikigai.webp" type="image/webp">
+                    <img src="assets/images/project-ikigai.png" alt="Сайт предпринимательского мастермайнда Икигай" width="1440" height="920" loading="lazy">
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-header-meta">
+                <span class="project-index">03</span>
+                <span class="project-category">Сообщество · Мастермайнд</span>
+              </div>
+              <h3 class="project-name">Икигай</h3>
+              <p class="project-desc">
+                Сайт предпринимательского мастермайнда с&nbsp;программой, архивом встреч и&nbsp;интерактивным конструктором целей.
+              </p>
+
+              <div class="project-features-block">
+                <h4 class="features-label">Особенности:</h4>
+                <ul class="features-list">
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Презентация формата</span>
+                  </li>
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Архив встреч</span>
+                  </li>
+                  <li>
+                    <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Конструктор декларации и&nbsp;заявка на&nbsp;участие</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://ikigai-mastermind.ru/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-btn" aria-label="Открыть сайт Икигай в новой вкладке">
+                  <span>Открыть сайт</span>
+                  <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. УСЛУГИ -->
+    <section class="section services-section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-number">02 / Услуги</div>
+          <h2 id="services-title" class="section-title">Что нужно вашему делу?</h2>
+        </header>
+
+        <div class="services-rows" id="services-list-container">
+          <!-- 01 Лендинг -->
+          <div class="service-row">
+            <div class="service-col-num">01</div>
+            <div class="service-col-title">
+              <h3>Лендинг</h3>
+            </div>
+            <div class="service-col-desc">
+              <p>Для одной услуги, продукта или события. Предложение, подробности, ответы на&nbsp;вопросы и&nbsp;понятный способ обратиться.</p>
+            </div>
+          </div>
+
+          <!-- 02 Сайт компании -->
+          <div class="service-row">
+            <div class="service-col-num">02</div>
+            <div class="service-col-title">
+              <h3>Сайт компании</h3>
+            </div>
+            <div class="service-col-desc">
+              <p>Для бизнеса с&nbsp;несколькими направлениями. Услуги, информация о&nbsp;компании, примеры работ и&nbsp;контакты.</p>
+            </div>
+          </div>
+
+          <!-- 03 Каталог -->
+          <div class="service-row">
+            <div class="service-col-num">03</div>
+            <div class="service-col-title">
+              <h3>Каталог</h3>
+            </div>
+            <div class="service-col-desc">
+              <p>Для товаров, которые нужно показать и&nbsp;обсудить перед покупкой. Категории, характеристики и&nbsp;запрос расчёта.</p>
+            </div>
+          </div>
+
+          <!-- Дополнительная строка: Доработка -->
+          <div class="service-row service-row-special">
+            <div class="service-col-num">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+            <div class="service-col-title">
+              <h3>Уже есть сайт?</h3>
+            </div>
+            <div class="service-col-desc">
+              <p>Можно начать с&nbsp;доработки: исправить структуру, обновить оформление или добавить нужные разделы.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Блок стоимости и условий -->
+        <div class="pricing-card">
+          <div class="pricing-content">
+            <div class="pricing-header">
+              <span class="pricing-label">Условия сотрудничества</span>
+              <div class="pricing-status">Стоимость — после обсуждения задачи</div>
+            </div>
+            <p class="pricing-explanation">
+              Цена зависит от&nbsp;количества страниц, готовности материалов и&nbsp;необходимых функций. Домен, хостинг и&nbsp;платные сервисы согласуются отдельно.
+            </p>
+          </div>
+          <div class="pricing-action">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Обсудить мой сайт</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ПОДХОД -->
+    <section class="section approach-section" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-number">03 / Подход</div>
+          <h2 id="approach-title" class="section-title">
+            Сначала разбираюсь.<br>
+            Потом разрабатываю
+          </h2>
+        </header>
+
+        <div class="approach-grid">
+          <div class="approach-item">
+            <div class="approach-item-header">
+              <span class="approach-item-index" aria-hidden="true">01</span>
+              <span class="approach-item-tag">Архитектура</span>
+            </div>
+            <h3 class="approach-item-title">Понятная структура</h3>
+            <p class="approach-item-text">
+              Посетитель должен быстро найти нужное и&nbsp;понять следующий шаг: без перегруза и&nbsp;лишних переходов.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <div class="approach-item-header">
+              <span class="approach-item-index" aria-hidden="true">02</span>
+              <span class="approach-item-tag">Прозрачность</span>
+            </div>
+            <h3 class="approach-item-title">Согласованный объём</h3>
+            <p class="approach-item-text">
+              До&nbsp;разработки определяем страницы, функции, стоимость и&nbsp;этапы. Никаких скрытых условий в&nbsp;процессе.
+            </p>
+          </div>
+
+          <div class="approach-item">
+            <div class="approach-item-header">
+              <span class="approach-item-index" aria-hidden="true">03</span>
+              <span class="approach-item-tag">Ответственность</span>
+            </div>
+            <h3 class="approach-item-title">Прямая связь</h3>
+            <p class="approach-item-text">
+              Вы&nbsp;общаетесь с&nbsp;человеком, который выполняет работу. Решения принимаются быстро и&nbsp;по&nbsp;существу.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ПРОЦЕСС -->
+    <section class="section process-section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-number">04 / Процесс</div>
+          <h2 id="process-title" class="section-title">От первого сообщения до запуска</h2>
+        </header>
+
+        <div class="process-track">
+          <!-- 01 -->
+          <div class="process-step">
+            <div class="step-num-circle">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Обсуждаем</h3>
+              <p class="step-text">Разбираемся в&nbsp;задаче, аудитории и&nbsp;материалах.</p>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="process-step">
+            <div class="step-num-circle">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Согласуем</h3>
+              <p class="step-text">Определяем структуру, внешний вид, объём, стоимость и&nbsp;сроки.</p>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="process-step">
+            <div class="step-num-circle">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Разрабатываем</h3>
+              <p class="step-text">Собираем сайт, обсуждаем правки и&nbsp;проверяем основные сценарии.</p>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="process-step">
+            <div class="step-num-circle">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Запускаем</h3>
+              <p class="step-text">Подключаем домен и&nbsp;передаём согласованные материалы и&nbsp;доступы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ОБ ИСПОЛНИТЕЛЕ -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-number">05 / Практика</div>
+          <h2 id="about-title" class="section-title">За проект отвечаю лично</h2>
+        </header>
+
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="about-statement-col">
+              <div class="about-mark" aria-hidden="true">
+                <svg width="48" height="40" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <blockquote class="about-quote">
+                <p class="about-text">
+                  Меня зовут <strong>[ИМЯ]</strong>. Я&nbsp;занимаюсь дизайном и&nbsp;разработкой сайтов. В&nbsp;«Ясно Бюро» вы&nbsp;общаетесь напрямую со&nbsp;мной: обсуждаем задачу, согласуем решения и&nbsp;доводим проект до&nbsp;запуска.
+                </p>
+              </blockquote>
+              <div class="about-signature">
+                <span class="about-name">[ИМЯ]</span>
+                <span class="about-role">Основатель и&nbsp;разработчик «Ясно Бюро»</span>
+              </div>
+            </div>
+
+            <div class="about-principles-col">
+              <h3 class="principles-heading">Формат работы</h3>
+              <ul class="principles-list">
+                <li>
+                  <span class="p-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <p><strong>Без посредников:</strong> ни&nbsp;аккаунт-менеджеров, ни&nbsp;испорченного телефона.</p>
+                </li>
+                <li>
+                  <span class="p-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <p><strong>Честный объём:</strong> только те&nbsp;страницы и&nbsp;функции, которые приносят пользу делу.</p>
+                </li>
+                <li>
+                  <span class="p-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <p><strong>Надёжный стек:</strong> лёгкий код, моментальная загрузка и&nbsp;понятная поддержка.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ВОПРОСЫ (FAQ) -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-number">06 / Вопросы</div>
+          <h2 id="faq-title" class="section-title">Частые вопросы</h2>
+        </header>
+
+        <div class="faq-accordion" id="faq-list">
+          <!-- Вопрос 1 -->
+          <details class="faq-item" open>
+            <summary class="faq-summary">
+              <span class="faq-question">Что нужно для начала?</span>
+              <span class="faq-icon-box" aria-hidden="true">
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>Расскажите о&nbsp;бизнесе и&nbsp;задаче. Если есть старый сайт, примеры, тексты или фотографии&nbsp;— отправьте их. Дальше определим, каких материалов не&nbsp;хватает.</p>
+            </div>
+          </details>
+
+          <!-- Вопрос 2 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-question">Можно доработать существующий сайт?</span>
+              <span class="faq-icon-box" aria-hidden="true">
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>Да. Сначала посмотрю, как он&nbsp;устроен, затем предложу объём доработок.</p>
+            </div>
+          </details>
+
+          <!-- Вопрос 3 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-question">Сколько времени занимает работа?</span>
+              <span class="faq-icon-box" aria-hidden="true">
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>Срок зависит от&nbsp;объёма и&nbsp;готовности материалов. Согласуем его до&nbsp;начала разработки.</p>
+            </div>
+          </details>
+
+          <!-- Вопрос 4 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-question">Кто оплачивает домен и хостинг?</span>
+              <span class="faq-icon-box" aria-hidden="true">
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>Эти расходы обсуждаются отдельно. Домен и&nbsp;основные аккаунты желательно оформлять на&nbsp;владельца бизнеса.</p>
+            </div>
+          </details>
+
+          <!-- Вопрос 5 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span class="faq-question">Будет ли сайт находиться в поиске?</span>
+              <span class="faq-icon-box" aria-hidden="true">
+                <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>Базовая подготовка помогает поисковым системам читать страницы. Продвижение по&nbsp;конкурентным запросам требует отдельной работы и&nbsp;не&nbsp;гарантирует конкретных позиций.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. КОНТАКТЫ -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-box">
+          <div class="section-number">07 / Контакт</div>
+          <h2 id="contact-title" class="contact-title">
+            Давайте проясним<br>
+            вашу задачу
+          </h2>
+          <p class="contact-description">
+            Напишите, чем занимаетесь, какой сайт нужен и&nbsp;к&nbsp;какой дате. Начнём с&nbsp;короткого спокойного обсуждения.
+          </p>
+
+          <div class="contact-actions">
+            <a href="https://t.me/[TELEGRAM]" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg contact-btn" aria-label="Написать основателю студии в Telegram">
+              <svg class="tg-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span>Написать в Telegram</span>
+            </a>
+          </div>
+
+          <div class="contact-meta">
+            <span class="contact-meta-item">Прямой диалог с исполнителем</span>
+            <span class="contact-meta-sep" aria-hidden="true">·</span>
+            <span class="contact-meta-item">Ответ в течение рабочего дня</span>
+            <span class="contact-meta-sep" aria-hidden="true">·</span>
+            <span class="contact-meta-item">Telegram: [TELEGRAM]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. ФУТЕР -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand-col">
+        <a href="#top" class="footer-brand" aria-label="Ясно Бюро — наверх">
+          <span class="brand-text">ясно бюро</span>
+          <span class="brand-dot" aria-hidden="true"></span>
+        </a>
+        <p class="footer-tagline">Дизайн и разработка сайтов</p>
+        <p class="footer-manifesto">Понятный сайт начинается с понимания бизнеса.</p>
+      </div>
+
+      <div class="footer-nav-col">
+        <nav aria-label="Навигация в футере">
+          <ul class="footer-nav">
+            <li><a href="#works">Работы</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#approach">Подход</a></li>
+            <li><a href="#process">Процесс</a></li>
+            <li><a href="#faq">Частые вопросы</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-contact-col">
+        <a href="https://t.me/[TELEGRAM]" target="_blank" rel="noopener noreferrer" class="footer-tg-link">
+          <span>Telegram: [TELEGRAM]</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <p class="footer-copy">© <span id="current-year">2026</span> «Ясно Бюро». Практика одного разработчика.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
