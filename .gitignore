@@ -1,0 +1,12 @@
+# Test and temporary screenshot artifacts
+test-*.png
+rebuilt-*.png
+live-*.png
+true-mobile-*.png
+fullpage-*.png
+shot*.png
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db
