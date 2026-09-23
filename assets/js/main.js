@@ -10,8 +10,8 @@
    собраны в одном месте для удобного редактирования.
    ========================================================================== */
 const YASNO_CONFIG = {
-  founder: "[ИМЯ]",
-  telegram: "[TELEGRAM]",
+  team: "«Ясно Бюро»",
+  telegram: "winteryaaa",
   services: [
     {
       num: "01",
@@ -35,8 +35,8 @@ const YASNO_CONFIG = {
     }
   ],
   pricing: {
-    status: "Стоимость — после обсуждения задачи",
-    note: "Цена зависит от количества страниц, готовности материалов и необходимых функций. Домен, хостинг и платные сервисы согласуются отдельно."
+    status: "Фиксированная стоимость под задачу",
+    note: "Оцениваем проект после обсуждения задачи: исходя из количества страниц, сложности функций и готовности материалов."
   }
 };
 
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initFaqAccordion();
   initScrollSpy();
   initCurrentYear();
+  initBackToTop();
 });
 
 /**
@@ -157,4 +158,24 @@ function initCurrentYear() {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+}
+
+/**
+ * Плавный скролл наверх для всех ссылок и кнопок с href="#top"
+ */
+function initBackToTop() {
+  const topLinks = document.querySelectorAll('a[href="#top"]');
+  topLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+      if (window.history && window.history.pushState) {
+        window.history.pushState(null, "", window.location.pathname + window.location.search);
+      }
+    });
+  });
 }

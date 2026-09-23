@@ -10,3 +10,8 @@ shot*.png
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Dependencies and build outputs
+node_modules/
+dist/
+
